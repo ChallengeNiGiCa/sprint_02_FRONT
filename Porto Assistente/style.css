@@ -1,0 +1,361 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00aaff;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-left: 55px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.boas {
+    color: #00aaff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    letter-spacing: 3px;
+
+}
+
+.banner {
+    background: linear-gradient(to right, #16a2e8, #00aaff75);
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 3.2em;
+    margin-bottom: 10px;
+    margin-right: 900px;
+}
+
+.banner p1 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-right: 800px;
+}
+
+.banner .nocarro {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.banner-img {
+    position: absolute;
+    right: 20px;
+    width: 40%;
+}
+
+.botao {
+    padding: 10px 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    color: #00aaff;
+    margin-right: 800px;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background-color: hsla(216, 100%, 53%, 0.904);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(9, 76, 219) 0px 7px 29px 0px;
+}
+
+.botao:active {
+    background-color: hsl(234, 98%, 54%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(9, 76, 219) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.robo {
+    float: left;
+    padding-left: 145px;
+    height: 280px;
+}
+
+.text-side {
+    float: right;
+    padding-right: 400px;
+}
+
+.text-side p {
+    text-align: center;
+    font-weight: normal;
+    padding-top: 10px;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.shadow__btn {
+    position: relative;
+    padding: 10px 100px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    margin-left: 135px;
+    margin-top: 20px;
+}
+
+.shadow__btn {
+    background: rgba(0, 140, 255, 0.685);
+    box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0, 140, 255),
+        0 0 25px rgb(0, 140, 255),
+        0 0 50px rgb(0, 140, 255),
+        0 0 100px rgb(0, 140, 255);
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: auto;
+}
+
+#equipe {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 25px;
+}
+
+.p {
+    text-align: center;
+    font-size: medium;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+
+}
+
+#equipe h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.membro {
+    display: inline-block;
+    margin: 0 20px;
+    padding-top: 45px;
+}
+
+.membro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.info {
+    margin-top: 10px;
+    color: #777;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.info p:first-child {
+    color: #000;
+    font-weight: bold;
+}
+
+.espaco-lateral {
+    width: 200px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #00aaff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    padding-top: 25;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+    .banner h1 {
+        font-size: 2.5em;
+        margin-right: 200px;
+    }
+  
+    .banner p1 {
+        font-size: 1.5em;
+        margin-right: 100px;
+    }
+  
+    .botao {
+        margin-right: 200px;
+    }
+  
+    .robo {
+        padding-left: 20px;
+    }
+  
+    .text-side {
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 2em;
+        margin-right: 0;
+    }
+
+    .banner p1 {
+        font-size: 1.2em;
+        margin-right: 0;
+    }
+
+    .botao {
+        margin-right: 0;
+    }
+
+    .robo {
+        padding-left: 0;
+    }
+
+    .text-side {
+        padding-right: 0;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .nav-links a {
+        padding-left: 30px;
+    }
+
+    .boas {
+        font-size: 24px;
+    }
+
+    .membro img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .banner h1 {
+        font-size: 2em;
+        margin-right: 0;
+    }
+
+    .banner p1 {
+        font-size: 1.2em;
+        margin-right: 0;
+    }
+
+    .botao {
+        padding: 8px 40px;
+        font-size: 13px;
+        margin-right: 0;
+    }
+
+    .robo {
+        height: auto;
+        padding-left: 0;
+    }
+
+    .text-side {
+        padding-right: 0;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    .nav-links a {
+        padding-left: 20px;
+        font-size: 14px;
+    } }
+
+    .boas {
+        font-size: 20px;
+    }
+
+    .membro img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }

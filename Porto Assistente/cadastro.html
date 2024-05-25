@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="logobranca.png" alt="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Sobre Nós</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="login1.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="ladoazul">
+            <img src="logobranca.png" alt="Logo" class="logo-pequena">
+            <h1>Bem-vindo ao Porto Assistente</h1>
+            <p>Cuidaremos muito bem do seu automóvel, mas antes, crie uma conta!</p>
+            <button id="entrarBtn" class="entrar">Entrar</button>
+
+        </div>
+        <div class="ladobranco">
+            <form class="cadastro-form">
+                <h2>Crie sua conta</h2>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="dob">Data de Nascimento:</label>
+                <input type="date" id="dob" name="dob" required>
+                <label for="vehicle">Veículo:</label>
+                <input type="text" id="vehicle" name="vehicle" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Porto Assistente.</p>
+    </footer>
+
+    <script>
+
+        var entrarBtn = document.getElementById("entrarBtn");
+
+
+        entrarBtn.addEventListener("click", function () {
+
+            window.location.href = "login1.html";
+        });
+    </script>
+
+</body>
+
+</html>

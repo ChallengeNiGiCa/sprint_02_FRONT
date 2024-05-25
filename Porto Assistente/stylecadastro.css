@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00aaff;
+    padding: 10px;
+}
+
+.logo img {
+    height: 40px;
+    margin-left: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.ladoazul {
+    background-color: #00AAFF;
+    color: white;
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 535px;
+}
+
+.ladoazul .logo-pequena {
+    margin-bottom: 20px;
+    margin-left: 200px;
+    height: 200px;
+}
+
+.ladoazul h1 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.ladoazul p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.entrar {
+    background-color: white;
+    color: #00AAFF;
+    border: 2px solid #00AAFF;
+    padding: 10px 70px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.entrar:hover {
+    background-color: #00AAFF;
+    color: white;
+}
+
+.ladobranco {
+    background-color: white;
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cadastro-form {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cadastro-form h2 {
+    margin-bottom: 20px;
+    color: #00AAFF;
+    text-align: center;
+}
+
+.cadastro-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cadastro-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a0a0a023;
+    border-radius: 50px;
+    background-color: #a0a0a023;
+}
+
+
+.cadastro-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00AAFF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.cadastro-form button:hover {
+    background-color: white;
+    color: #00AAFF;
+    border: 1px solid #00AAFF;
+}
+
+footer {
+    background-color: #00AAFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ladoazul,
+    .ladobranco {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .ladoazul .logo-pequena {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cadastro-form {
+        max-width: 300px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .logo img {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ladoazul,
+    .ladobranco {
+        width: 100%;
+    }
+
+    .ladoazul h1,
+    .ladoazul p {
+        font-size: 16px;
+    }
+
+    .ladoazul .logo-pequena {
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+    }
+
+    .entrar {
+        padding: 10px 50px;
+        font-size: 14px;
+    }
+
+    .cadastro-form {
+        max-width: 250px;
+    }
+
+    .cadastro-form h2 {
+        font-size: 18px;
+    }
+
+    .cadastro-form input {
+        font-size: 14px;
+    }
+
+    .cadastro-form button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

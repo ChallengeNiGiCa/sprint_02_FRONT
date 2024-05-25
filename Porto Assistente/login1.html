@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelog.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="logobranca.png" alt="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Sobre Nós</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="login1.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="ladoazul">
+            <img src="logobranca.png" alt="Logo" class="logo-pequena">
+            <h1>Bem-vindo ao Porto Assistente</h1>
+            <p>Cuidaremos muito bem do seu automóvel, mas antes, faça login!</p>
+            <button id="cadastrarBtn" class="entrar">Cadastrar</button>
+
+        </div>
+        <div class="ladobranco">
+            <form class="cadastro-form">
+                <h2>Iniciar sessão</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <a href="#" class="esqueci-senha">Esqueci a senha</a>
+                <button type="submit">Entrar</button>
+                <p class="ou">ou</p>
+                <div class="social-login">
+                    <button class="google-login">
+                        <img src="google.png" alt="google">
+                        Entrar com Google
+                    </button>
+                    <button class="microsoft-login">
+                        <img src="microsoft.png" alt="micrsoft">
+                        Entrar com Microsoft
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Porto Assistente.</p>
+    </footer>
+
+    <script>
+        var cadastrarBtn = document.getElementById("cadastrarBtn");
+        cadastrarBtn.addEventListener("click", function () {
+            window.location.href = "cadastro.html";
+        });
+    </script>
+
+</body>
+
+</html>
